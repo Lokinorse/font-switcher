@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "Font Switcher"
+  },
+  "extDescription": {
+    "message": "Шрифты и размер для активной вкладки"
+  },
+  "actionTitle": {
+    "message": "Шрифты"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extName": {
+    "message": "Font Switcher"
+  },
+  "extDescription": {
+    "message": "Schriftart und Größe für den aktiven Tab"
+  },
+  "actionTitle": {
+    "message": "Schriften"
+  }
+}

@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Шрифты</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="headerText">
+          <div id="title" class="title"></div>
+          <div id="subtitle" class="subtitle"></div>
+        </div>
+        <div class="langSwitch" role="group" aria-label="Language">
+          <button class="langButton" type="button" data-lang="en">EN</button>
+          <button class="langButton" type="button" data-lang="de">DE</button>
+          <button class="langButton" type="button" data-lang="ru">RU</button>
+        </div>
+      </header>
+
+      <section class="panel">
+        <label id="labelFont" class="label" for="fontSearch"></label>
+        <div id="webFontNotice" class="notice hidden"></div>
+        <div class="combo" id="fontCombo">
+          <input
+            id="fontSearch"
+            type="text"
+            autocomplete="off"
+          />
+        </div>
+        <div id="fontList" class="list hidden" role="listbox"></div>
+        <div class="current">
+          <span id="currentLabel"></span> <span id="currentFont"></span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <label id="labelSystemFont" class="label" for="systemFontSearch"></label>
+        <div class="combo systemRow" id="systemFontCombo">
+          <input
+            id="systemFontSearch"
+            type="text"
+            autocomplete="off"
+          />
+          <button id="systemFontApply" class="scanButton" type="button"></button>
+          <button id="systemFontScan" class="scanButton" type="button"></button>
+        </div>
+        <div id="systemFontList" class="list hidden" role="listbox"></div>
+        <div id="systemFontHint" class="hint"></div>
+      </section>
+
+      <section class="panel">
+        <label id="labelSize" class="label" for="fontSize"></label>
+        <div class="sizeRow">
+          <input id="fontSize" type="range" min="10" max="36" step="1" />
+          <input
+            id="fontSizeNumber"
+            type="number"
+            min="10"
+            max="72"
+            step="1"
+          />
+          <span class="unit">px</span>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="resetButton" class="resetButton" type="button"></button>
+      </div>
+
+      <div id="status" class="status"></div>
+    </div>
+
+    <script src="dist/popup.js"></script>
+  </body>
+</html>
